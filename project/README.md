@@ -1,6 +1,6 @@
-# django-vue
+# cutecats
 
-> A Vue.js project
+> Django-Vue Practice
 
 ## Build Setup
 

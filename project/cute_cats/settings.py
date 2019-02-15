@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'nzw_shx23p)5wu%el4y2pi9_vxp7!7xzl2+jl25s8a=3cw*%oo'
+SECRET_KEY = 'xw1fl8ujo@#j@w21*kp8ss8yycg=(w+$8!u(^edg@(@8el&ib_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #THIRD PARTY
     'webpack_loader',
-
 ]
 
 MIDDLEWARE = [
@@ -122,10 +121,11 @@ USE_TZ = True
 
 # STATIC_URL = '/static/'
 STATIC_URL = '/public/'
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'public')
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'dist'),
-)
+
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'dist'),)
+
 WEBPACK_LOADER = {
     'DEFAULT': {
         'CACHE': not DEBUG,
